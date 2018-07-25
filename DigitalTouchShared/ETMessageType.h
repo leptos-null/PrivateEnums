@@ -46,16 +46,16 @@ cy# NSStringFromETMessageType(15)
 */
 
 typedef NS_ENUM(uint16_t, ETMessageType) {
-    ETMessageTypeTap = 0,
-    ETMessageTypeDoodle = 1,
-    ETMessageTypeHeartbeat = 2,
+    ETMessageTypeTap,
+    ETMessageTypeDoodle,
+    ETMessageTypeHeartbeat,
     /* 3, 4, 5 are undeclared, as shown above.
      * They may have been left empty with the 
      * intention of adding them in a later OS 
      */
     ETMessageTypeQuickTap = 6,
-    ETMessageTypeReadReceipt = 7,
-    ETMessageTypeVideo = 8,
-    ETMessageTypeKiss = 9,
-    ETMessageTypeAnger = 10
+    ETMessageTypeReadReceipt,
+    ETMessageTypeVideo,
+    ETMessageTypeKiss,
+    ETMessageTypeAnger
 };
