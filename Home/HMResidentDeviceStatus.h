@@ -47,7 +47,7 @@ cy# NSStringFromHMResidentDeviceStatus(16)
 @end
 */
 
-typedef NS_ENUM(NSUInteger, HMResidentDeviceStatus) {
+typedef NS_OPTIONS(NSUInteger, HMResidentDeviceStatus) {
     HMResidentDeviceStatusAvailable  = 1 << 0,
     HMResidentDeviceStatusPrimary    = 1 << 1,
     HMResidentDeviceStatusOnBattery  = 1 << 2,
