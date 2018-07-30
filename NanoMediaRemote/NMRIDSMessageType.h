@@ -47,7 +47,7 @@ typedef NS_ENUM(uint16_t, NMRIDSMessageType) {
 	NMRIDSMessageTypeMediaRemoteSetState,
 	NMRIDSMessageTypeMediaRemoteGetArtwork,
 	NMRIDSMessageTypeMediaRemoteSetArtwork,
-
+	/* 7 had no description, skipped */
 	NMRIDSMessageTypeSetCloudAvailability = 8,
 	NMRIDSMessageTypeGetCloudAvailability,
 	NMRIDSMessageTypeSetSpecializedQueueInfo,
