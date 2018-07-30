@@ -1,8 +1,7 @@
 #import <Foundation/Foundation.h>
 
 /* proof
- * dumped from a command line tool
- * because there are 157 cases
+ * dumped from a command line tool because there are 157 cases
  *********************************************************
 
 @import Foundation;
