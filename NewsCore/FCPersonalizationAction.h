@@ -54,7 +54,7 @@ NSInteger seemed resonable as a default value
 */
 
 typedef NS_ENUM(NSInteger, FCPersonalizationAction) {
-	FCPersonalizationActionNone,
+    FCPersonalizationActionNone,
     FCPersonalizationActionPresented,
     FCPersonalizationActionTapped,
     FCPersonalizationActionWeakClicked,

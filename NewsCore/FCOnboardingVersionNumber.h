@@ -26,7 +26,7 @@ The proof function is called with -integerValue
 */
 
 typedef NS_ENUM(NSInteger, FCOnboardingVersionNumber) {
-	FCOnboardingVersionNumberNewUser,
+    FCOnboardingVersionNumberNewUser,
     FCOnboardingVersionNumberOnboardedMonarch,
     FCOnboardingVersionNumberOnboardedWhitetail,
     FCOnboardingVersionNumberCorryDefaultForYou,
