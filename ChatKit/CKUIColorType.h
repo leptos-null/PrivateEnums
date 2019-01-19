@@ -25,7 +25,6 @@ null
 @end
 */
 
-// located in ChatKit (private framework)
 typedef NS_ENUM(char, CKUIColorType) {
     CKUIColorTypeGreen,
     CKUIColorTypeBlue,
