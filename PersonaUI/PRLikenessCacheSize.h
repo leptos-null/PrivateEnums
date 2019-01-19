@@ -27,9 +27,8 @@ throw #"Unsupported PRLikenessCacheSize provided: 1024"
 
 typedef NS_ENUM(NSUInteger, PRLikenessCacheSize) {
     PRLikenessCacheSizeNano   = 1 << 5,
-    PRLikenessCacheSizeMicro  = 1 << 6,
-    PRLikenessCacheSizeMini   = 1 << 7,
-    PRLikenessCacheSizeSmall  = 1 << 8,
-    PRLikenessCacheSizeMedium = 1 << 9,
-    PRLikenessCacheSizeLarge  = 1 << 10
+    PRLikenessCacheSizeMini   = 1 << 6,
+    PRLikenessCacheSizeSmall  = 1 << 7,
+    PRLikenessCacheSizeMedium = 1 << 8,
+    PRLikenessCacheSizeLarge  = 1 << 9
 };
