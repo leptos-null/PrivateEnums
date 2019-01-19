@@ -3,8 +3,8 @@
 /* proof
 mobile:~$ cycript 
 cy# @import HealthDaemon
-cy# extern "C" NSString *NSStringFromHDDemoDataGenerationPeriod(int)
-(extern "C" NSString *NSStringFromHDDemoDataGenerationPeriod(int))
+cy# extern "C" NSString *NSStringFromHDDemoDataGenerationPeriod(NSInteger)
+(extern "C" NSString *NSStringFromHDDemoDataGenerationPeriod(long))
 cy# NSStringFromHDDemoDataGenerationPeriod(0)
 @"Not Set"
 cy# NSStringFromHDDemoDataGenerationPeriod(1)
@@ -25,13 +25,13 @@ cy# NSStringFromHDDemoDataGenerationPeriod(3000)
 @"Year to Date"
 */
 
-/* rationale for int
-It's the C default. I couldn't figure out where
-this was used anywhere in the framework. It might
-be in the actual daemon that uses this framework.
+/* rationale for NSInteger
+The proof function is not called from 
+within the framework, and there are 
+no suggestive class or method names.
 */
 
-typedef NS_ENUM(int, HDDemoDataGenerationPeriod) {
+typedef NS_ENUM(NSInteger, HDDemoDataGenerationPeriod) {
     HDDemoDataGenerationPeriodNotSet      = 0,
     HDDemoDataGenerationPeriodOneDay      = 1,
     HDDemoDataGenerationPeriodOneWeek     = 7,
