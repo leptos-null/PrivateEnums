@@ -3,7 +3,7 @@
 /* proof
 mobile:~$ cycript 
 cy# @import DigitalTouchShared
-cy# extern "C" NSString *NSStringFromETMessageType(uint16_t)
+cy# extern "C" NSString *NSStringFromETMessageType(unichar)
 (extern "C" NSString *NSStringFromETMessageType(unsigned short))
 cy# NSStringFromETMessageType(0)
 @"tap"
@@ -39,13 +39,13 @@ cy# NSStringFromETMessageType(15)
 @"unknown (15)"
 */
 
-/* rationale for uint16_t
+/* rationale for unichar
 @interface ETMessage : NSObject
 @property (nonatomic, readonly) unsigned short messageType;
 @end
 */
 
-typedef NS_ENUM(uint16_t, ETMessageType) {
+typedef NS_ENUM(unichar, ETMessageType) {
     ETMessageTypeTap,
     ETMessageTypeDoodle,
     ETMessageTypeHeartbeat,
